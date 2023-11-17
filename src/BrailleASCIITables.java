@@ -28,7 +28,7 @@ return braille;
 
   public static String toASCII(String bits){
 
-BitTree toA = new BitTree(8);
+BitTree toA = new BitTree(6);
 File toAy = new File("src/BtoA.txt");
 String ski = null;
 try{
@@ -44,7 +44,7 @@ return ski;
 
   public static String toUnicode(String bits) {
 
-    BitTree toU = new BitTree(8);
+    BitTree toU = new BitTree(6);
     File toYu = new File("src/BtoU.txt");
     String Yuen = null;
     try{
@@ -55,6 +55,6 @@ return ski;
      return "File is invalid";
     }
     return Yuen;
-      }//toASCII
+      }//toUnicode
 
 }
